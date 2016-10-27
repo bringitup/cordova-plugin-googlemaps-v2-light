@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-googlemaps-v2-light",
+  "version": "1.3.9",
+  "description": "Fork of https://github.com/mapsplugin/cordova-plugin-googlemaps",
+  "cordova": {
+    "id": "cordova-plugin-googlemaps-v2-light",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bringitup/cordova-plugin-googlemaps-v2-light.git"
+  },
+  "keywords": [
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.5.0"
+    }
+  ],
+  "author": "Masashi Katsumata, Hirbod Mirjavadi",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps/issues"
+  },
+  "homepage": "https://github.com/mapsplugin/cordova-plugin-googlemaps#readme"
+}
