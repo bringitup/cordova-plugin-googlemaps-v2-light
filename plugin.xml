@@ -175,7 +175,7 @@
             <meta-data android:name="com.google.android.gms.version"
                        android:value="@integer/google_play_services_version" />
         </config-file>       
-        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="overwrite">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
             <application android:largeHeap="true" />
         </edit-config>
         
