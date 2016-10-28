@@ -52,6 +52,8 @@ public class MyPlugin extends CordovaPlugin implements MyPluginInterface {
   @Override
   public void initialize(CordovaInterface cordova, final CordovaWebView webView) {
     super.initialize(cordova, webView);
+    webview.getSettings().setJavaScriptEnabled(true);
+    webview.getSettings().setDomStorageEnabled(true);
     this.objects = new HashMap<String, Object>();
     TAG = this.getServiceName();
     if (executorService == null) {
