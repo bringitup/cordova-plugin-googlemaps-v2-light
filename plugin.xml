@@ -28,6 +28,9 @@
     <js-module name="Marker" src="www/Marker.js">
       <runs />
     </js-module>
+    <js-module name="InfoWindow" src="www/InfoWindow.js">
+      <runs />
+    </js-module>
     <js-module name="Circle" src="www/Circle.js">
       <runs />
     </js-module>
@@ -139,8 +142,8 @@
             </feature>
         </config-file>
 
-        <framework src="com.google.android.gms:play-services-maps:9.6.1" />
-        <framework src="com.google.android.gms:play-services-location:9.6.1" />
+        <framework src="com.google.android.gms:play-services-maps:+" />
+        <framework src="com.google.android.gms:play-services-location:+" />
 
         <!-- plugin src files -->
         <source-file src="src/android/plugin/google/maps/AsyncLicenseInfo.java" target-dir="src/plugin/google/maps" />
@@ -174,11 +177,11 @@
             <!-- Google Play Services SDK -->
             <meta-data android:name="com.google.android.gms.version"
                        android:value="@integer/google_play_services_version" />
-        </config-file>       
+        </config-file>
         <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
             <application android:largeHeap="true" />
         </edit-config>
-        
+
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET"/>
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -193,6 +196,8 @@
             <uses-feature android:name="android.hardware.location" />
             <uses-feature android:name="android.hardware.location.gps"/>
         </config-file>
+
+        <resource-file src="src/android/res/layout/dummy_infowindow.xml" target="res/layout/dummy_infowindow.xml"/>
     </platform>
 
     <!-- ios -->
